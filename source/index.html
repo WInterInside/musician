@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&a.." rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async=""></script>
   </head>
   <body>
     <header class="header">
@@ -23,16 +27,6 @@
       </nav>
     </header>
     <main class="main">
-      <!--
-      <picture>
-        <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-
-        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-        <img class="site-promo____img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="">
-      </picture> -->
       <h1 class="main__heading visually-hidden">John Doe productions</h1>
       <section class="discography">
         <h2 class="discography__heading">Discography</h2>
@@ -137,6 +131,15 @@
               <a class="button button__visit" href="#">Visit the iTunes -></a>
               <div class="latter__widget"></div>
               <div class="latter__track">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/track-cover-desktop-1x.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/img/track-cover-tab-1x.webp">
+                  <source type="image/webp" srcset="img/track-cover-mob-1x.webp">
+
+                  <source media="(min-width: 1300px)" srcset="img/track-cover-desktop-1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/track-cover-tab-1x.jpg">
+                  <img class="latter__img" src="img/track-cover-mob-1x.jpg" alt="">
+                </picture>
               </div>
             </div>
           </li>
@@ -154,7 +157,17 @@
               <a class="button button__visit" href="#">Visit the iTunes -></a>
               <div class="latter__widget"></div>
             </div>
-            <div class="latter__track"></div>
+            <div class="latter__track">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/track2-cover-desktop-1x.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img/track2-cover-tab-1x.webp">
+                <source type="image/webp" srcset="img/track3-cover-mob-1x.webp">
+
+                <source media="(min-width: 1300px)" srcset="img/track2-cover-desktop-1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/track2-cover-tab-1x.jpg">
+                <img class="latter__img" src="img/track2-cover-mob-1x.jpg" alt="">
+              </picture>
+            </div>
           </li>
           <li class="latter__item">
             <p class="latter__year">03.04.2015</p>
@@ -168,9 +181,19 @@
                 John Newman, and Kodaline before inking a record deal with Republic/Universal in 2012.
               </p>
               <a class="button button__visit" href="#">Visit the iTunes -></a>
-              <div class="latter__widget"> </div>
+              <div class="latter__widget"></div>
             </div>
-            <div class="latter__track"></div>
+            <div class="latter__track">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/track3-cover-desktop-1x.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img/track3-cover-tab-1x.webp">
+                <source type="image/webp" srcset="img/track3-cover-mob-1x.webp">
+
+                <source media="(min-width: 1300px)" srcset="img/track3-cover-desktop-1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/track3-cover-tab-1x.jpg">
+                <img class="latter__img" src="img/track3-cover-mob-1x.jpg" alt="">
+              </picture>
+            </div>
           </li>
         </ul>
       </section>
@@ -340,13 +363,13 @@
         <div class="submit-form">
           <form action="https://echo.htmlacademy.ru" method="post">
             <label class="submit-form__label">
-               <input class="submit-form__input" type="text" name="name" placeholder="Name">
-             </label>
+              <input class="submit-form__input" type="text" name="name" placeholder="Name">
+            </label>
             <label class="submit-form__label">
               <input class="submit-form__input" type="text" name="e-mail" autocapitalize="off" placeholder="E-mail" required> </label>
             <label class="submit-form__label">
-               <input class="submit-form__input" type="text" name="message" placeholder="Message">
-             </label>
+              <input class="submit-form__input" type="text" name="message" placeholder="Message">
+            </label>
             <button class="submit-form__button" type="submit">Send</button>
           </form>
           <section class="social">
