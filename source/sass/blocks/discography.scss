@@ -1,0 +1,20 @@
+.discography {
+  position: relative;
+}
+
+.discography::before {
+  @include pseudo;
+  z-index: 1;
+  top: 14px;
+  left: 220px;
+  width: 300px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.discography__text {
+  @include text (#7a8083, 15px, 25px);
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
+}
