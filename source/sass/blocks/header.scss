@@ -1,0 +1,22 @@
+.header {
+  height: 1300px;
+  background: url("../img/header-bg-mob-1x.jpg");
+  background-position: top center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (min-width: $tablet-widths) {
+  .header {
+    background: url("../img/header-bg-tab-1x.jpg");
+    background-position: top center, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .header {
+    background: url("../img/header-bg-descktop-1x.jpg");
+    background-position: top center, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
