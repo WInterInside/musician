@@ -1,12 +1,19 @@
 .section-heading {
-  display: block;
   position: relative;
-  z-index: 1;
+  margin: 0 auto;
+}
+
+.section-heading--discography {
+  background-image: url("../img/discography-descktop-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 140px;
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-heading__content {
   font-family: $heading-font;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: #886851;
-  margin: 0 auto;
 }

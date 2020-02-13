@@ -5,6 +5,35 @@
   background-repeat: no-repeat;
 }
 
+.header__menu--nojs {
+  display: none;
+}
+
+.header__menu {
+  position: relative;
+  left: 45%;
+  border: none;
+  height: 85px;
+  width: 85px;
+  cursor: pointer;
+}
+
+.header__menu--off {
+  background-image: url("../img/menu-open.png");
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.header__menu--on {
+  background-image: url("../img/menu-close.png");
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-widths) {
   .header {
     background: url("../img/header-bg-tab-1x.jpg");
@@ -18,5 +47,9 @@
     background: url("../img/header-bg-descktop-1x.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+  }
+
+  .header__menu {
+    display: none;
   }
 }
