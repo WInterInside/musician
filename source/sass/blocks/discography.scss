@@ -16,7 +16,7 @@
 
 .discography::before {
   @include pseudo;
-  top: 14px;
+  top: 30px;
   left: 30%;
   width: 300px;
   height: 1px;
@@ -75,7 +75,9 @@
 
 @media (min-width: $tablet-widths) {
   .discography::before {
-    left: 40%;
+    width: 500px;
+    left: 34%;
+    top: 45px;
   }
 }
 
@@ -89,6 +91,8 @@
 
 @media (min-width: $desktop-widths) {
   .discography::before {
-    left: 42%;
+    top: 30px;
+    left: 41%;
+    width: 350px;
   }
 }

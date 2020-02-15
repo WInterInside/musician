@@ -6,7 +6,7 @@
 .section-heading--discography {
   background-image: url("../img/discography-descktop-1x.jpg");
   background-repeat: no-repeat;
-  background-position: 140px;
+  background-position: bottom;
   background-size: 100%;
   background-clip: text;
   color: transparent;
@@ -16,4 +16,22 @@
   font-family: $heading-font;
   text-transform: uppercase;
   text-align: center;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+
+@media (min-width: $tablet-widths) {
+  .section-heading__content {
+    font-size: 75px;
+    line-height: 88px;
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .section-heading__content {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
