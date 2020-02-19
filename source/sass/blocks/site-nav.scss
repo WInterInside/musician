@@ -1,9 +1,6 @@
-.site-nav {
-  position: relative;
-}
-
 @media (max-width: 1999px) {
   .site-nav {
+    position: relative;
     transition: all 1s ease;
     max-height: 0;
     opacity: 0;
@@ -23,7 +20,7 @@
   .site-nav__list {
     @include list-style;
     position: absolute;
-    top: -87px;
+    top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
@@ -36,20 +33,16 @@
     padding-left: 30px;
     padding-right: 30px;
     background-color: rgba(229, 230, 230, 0.5);
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
-  }
+    font-weight: 400;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 
-  .site-nav__item:last-child {
-    border-bottom: none;
-  }
-
-  .site-nav__item:hover {
-    color: #555555;
-    transform: translateX(-40px);
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    background-color: rgba(207, 198, 177, 0.3);
+    &:hover {
+      color: #555555;
+      border-top: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+      background-color: rgba(207, 198, 177, 0.3);
+    }
   }
 }
 
@@ -62,6 +55,7 @@
   }
 
   .site-nav {
+    position: relative;
     padding-top: 10px;
     min-height: 60px;
     background-color: rgba(229, 230, 230, 0.5);
@@ -69,13 +63,14 @@
 
   .site-nav__item {
     @include text(#606060, 17px, 40px);
+    font-weight: 400;
     text-align: left;
     text-transform: uppercase;
-    font-weight: bold;
     border-bottom: none;
-  }
 
-  .site-nav__item:hover {
-    border-bottom: 2px solid #000000;
+    &:hover {
+      color: #000000;
+      border-bottom: 2px solid #000000;
+    }
   }
 }

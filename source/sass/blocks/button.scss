@@ -4,7 +4,6 @@
   vertical-align: middle;
   text-align: center;
   min-height: 55px;
-  margin-left: 225px;
   padding-left: 80px;
   padding-right: 80px;
   text-decoration: none;
@@ -15,23 +14,32 @@
   cursor: pointer;
 }
 
-.button__play--hell {
-  color: #ffffff;
-  background: url("../img/play-bg.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
+.button__play {
+  margin-left: 225px;
 
-.button__play--night {
-  background: url("../img/play-bg2.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
+  &--hell {
+    color: #ffffff;
+    background: url("../img/play-bg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
 
-.button__play--mirrors {
-  background: url("../img/play-bg3.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
+  &--night {
+    background: url("../img/play-bg2.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  &--mirrors {
+    background: url("../img/play-bg3.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: inset 0px 0px 44px 0px rgba(0,0,0,0.75);
+  }
 }
 
 @media (min-width: $tablet-widths) {

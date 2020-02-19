@@ -1,23 +1,37 @@
 .section-heading {
   position: relative;
   margin: 0 auto;
+  z-index: 1;
+
+  &:before {
+    @include pseudo;
+    z-index: 1;
+    left: 22%;
+    top: 30px;
+    width: 350px;
+    height: 2px;
+    background-color: red;
+  }
 }
 
-.section-heading--discography {
+/* ПОМЕНЯТЬ НА МОДИФИКАТОР!!!!!!!!!! */
+.section-heading__content {
+  position: relative;
+  z-index: 2;
+
   background-image: url("../img/discography-descktop-1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
   background-clip: text;
   color: transparent;
-}
 
-.section-heading__content {
   font-family: $heading-font;
   text-transform: uppercase;
   text-align: center;
   font-size: 50px;
   line-height: 60px;
+
 }
 
 
@@ -27,7 +41,6 @@
     line-height: 88px;
   }
 }
-
 
 @media (min-width: $desktop-widths) {
   .section-heading__content {
