@@ -3,37 +3,41 @@
   margin: 0 auto;
   z-index: 1;
 
-  &:before {
+  &::before {
     @include pseudo;
     z-index: 1;
-    left: 22%;
+    left: 75px;
     top: 30px;
-    width: 350px;
+    width: 500px;
     height: 2px;
-    background-color: red;
+    background-color: #000000;
+
+    @media (min-width: $tablet-widths) {
+      left: 145px;
+      top: 45px;
+      width: 750px;
+    }
   }
 }
 
-/* ПОМЕНЯТЬ НА МОДИФИКАТОР!!!!!!!!!! */
 .section-heading__content {
   position: relative;
   z-index: 2;
-
-  background-image: url("../img/discography-descktop-1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100%;
-  background-clip: text;
-  color: transparent;
-
   font-family: $heading-font;
   text-transform: uppercase;
   text-align: center;
   font-size: 50px;
   line-height: 60px;
 
+  &--discography {
+    background-image: url("../img/discography-descktop-1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-clip: text;
+    color: transparent;
+  }
 }
-
 
 @media (min-width: $tablet-widths) {
   .section-heading__content {

@@ -12,7 +12,7 @@
 
 .header__menu {
   position: absolute;
-  right: 0;
+  left: 47%;
   border: none;
   height: 65px;
   width: 65px;
@@ -26,6 +26,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.5;
+  left: 47%;
 }
 
 .header__menu--on {
@@ -34,7 +35,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.5;
-  right: 249px;
+  left: 47%;
 }
 
 @media (min-width: $tablet-widths) {
