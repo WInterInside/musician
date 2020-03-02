@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 1300px;
+  min-height: 1300px;
   background: url("../img/header-bg-mob-1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -48,6 +48,7 @@
 
 @media (min-width: $desktop-widths) {
   .header {
+    min-height: 1000px;
     background: url("../img/header-bg-descktop-1x.jpg");
     background-position: top center;
     background-repeat: no-repeat;

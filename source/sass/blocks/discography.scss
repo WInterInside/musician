@@ -1,18 +1,29 @@
 .discography {
   position: relative;
-  min-height: 2200px;
+  min-height: 2300px;
   background: url("../img/discography-mob-1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-widths) {
-    min-height: 2500px;
-  }
-}
-
-@media (min-width: 751px) {
-  .discography {
+  @media (min-width: 751px) {
     background: url("../img/discography-tab-1x.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-widths) {
+    min-height: 2600px;
+  }
+
+  @media (min-width: 1538px) {
+    background: url("../img/discography-descktop-1x.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-widths) {
+    min-height: 2800px;
+    background: url("../img/discography-descktop-1x.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
   }
@@ -46,6 +57,23 @@
 
 .discography__item {
   margin-bottom: 100px;
+
+  @media (min-width: $desktop-widths) {
+    display: flex;
+  }
+}
+
+.discography_album-data {
+  @media (min-width: $desktop-widths) {
+    width: 48%;
+    margin-right: auto;
+  }
+}
+
+.discography__description {
+  @media (min-width: $desktop-widths) {
+    width: 48%;
+  }
 }
 
 .discography__heading {
@@ -56,10 +84,18 @@
 
 .discography__heading--night-visions {
   padding-right: 200px;
+
+  @media (min-width: $desktop-widths) {
+    padding-right: 0;
+  }
 }
 
 .discography__headin--mirrors {
-  padding-right: 100px;
+  padding-right: 160px;
+
+  @media (min-width: $desktop-widths) {
+    padding-right: 0;
+  }
 }
 
 .discography__year,

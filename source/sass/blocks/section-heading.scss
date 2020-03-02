@@ -17,6 +17,12 @@
       top: 45px;
       width: 750px;
     }
+
+    @media (min-width: $desktop-widths) {
+      left: 345px;
+      top: 30px;
+      width: 500px;
+    }
   }
 }
 
