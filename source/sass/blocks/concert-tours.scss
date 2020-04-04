@@ -1,9 +1,17 @@
 .concert-tours {
-  min-height: 1300px;
+  min-height: 1200px;
   position: relative;
   background: url("../img/consert-bg-mob-1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-widths) {
+    width: $tablet-widths;
+  }
+
+  @media (min-width: $desktop-widths) {
+    width: $desktop-widths;
+  }
 
   @media (min-width: $tablet-widths) {
     min-height: 1300px;
@@ -18,4 +26,53 @@
     background-position: bottom;
     background-repeat: no-repeat;
   }
+}
+
+.concert-tours__heading--item {
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+
+.concert-tours__text {
+  text-align: center;
+  margin-bottom: 270px;
+
+  @media (min-width: $desktop-widths) {
+    margin-bottom: 470px;
+  }
+}
+
+.concert-tours__year {
+  position: relative;
+  font-weight: bold;
+
+  &::before {
+    @include pseudo;
+    left: 0;
+    top: 33px;
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+
+    @media (min-width: $tablet-widths) {
+      width: 70%;
+    }
+  }
+}
+
+.concert-tours__description-text {
+  color: #7a8083;
+  padding-right: 300px;
+  margin-bottom: 130px;
+  text-align: left;
+
+  @media (min-width: $desktop-widths) {
+    padding-right: 380px;
+  }
+}
+
+.concert-tours__year,
+.concert-tours__heading--description {
+  color: #000000;
+  font-weight: bold;
 }

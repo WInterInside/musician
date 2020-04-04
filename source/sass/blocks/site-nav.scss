@@ -59,6 +59,14 @@
     padding-top: 10px;
     min-height: 60px;
     background-color: rgba(229, 230, 230, 0.5);
+
+    @media (min-width: $tablet-widths) {
+      width: $tablet-widths;
+    }
+
+    @media (min-width: $desktop-widths) {
+      width: $desktop-widths;
+    }
   }
 
   .site-nav__item {

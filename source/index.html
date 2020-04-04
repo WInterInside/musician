@@ -12,6 +12,9 @@
     <script src="js/picturefill.js" async=""></script>
   </head>
   <body>
+    <div class="sprite" style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header">
       <button class="header__menu header__menu--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="site-nav site-nav--nojs">
@@ -101,10 +104,10 @@
       </section>
       <section class="concert-tours">
         <div class="container">
-          <div class="section-heading section-heading--concert-tours">
-            <h2 class="section-heading__content">Concert tours</h2>
+          <div class="section-heading">
+            <h2 class="section-heading__content section-heading__content--concert-tours">Concert tours</h2>
           </div>
-          <p class="concert-tours-text">
+          <p class="concert-tours__text">
             Before the release of Night Visions, Imagine Dragons made appearances on American radio and television to promote their extended play,
             Continued Silence and debut single It's Time. The band performed "It's Time" on the July 16, 2012 airing of NBC late-night talk show The Tonight Show with Jay Leno"
           </p>
@@ -114,7 +117,7 @@
               <h3 class="concert-tours__heading concert-tours__heading--item">Smoke + mirrors tour</h3>
               <div class="concert-tours__description">
                 <p class="concert-tours__heading concert-tours__heading--description">2015 - present</p>
-                <p class="concert-tours__text concert-tours__text--description">
+                <p class="concert-tours__description-text">
                   At Lollapalooza in Sao Paulo, Brazil, the last date on the Into the Night Tour,
                   the band announced a rest, and complemented saying, "This is our last show for a while, and had no better place to end this tour".
                   [51] The conclusion of the Into the Night Tour signaled the end of the Night Visions album cycle.
@@ -122,7 +125,7 @@
                   [so] that second album will come, unless we die. next year. Hopefully we don't die and there will be a second album.
                   I don't know when it will be, but it may come"
                 </p>
-                <a class="button button__buy" href="#">Buy online -></a>
+                <a class="button button__buy" href="#">Buy online</a>
               </div>
             </li>
           </ul>
@@ -138,9 +141,9 @@
           </p>
           <ul class="latter__list">
             <li class="latter__item">
-              <p class="latter__year">03.04.2015</p>
-              <h3 class="latter__heading latter__heading--item">Indian sammer</h3>
               <div class="latter__description">
+                <p class="latter__year">03.04.2015</p>
+                <h3 class="latter__heading latter__heading--item">Indian sammer</h3>
                 <h4 class="latter__heading latter__heading--description">Sam Feldt ft. Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</h4>
                 <p class="latter__text latter__text--description">
                   "Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album,
@@ -148,25 +151,44 @@
                   2012,[1] and released to contemporary radio on April 9, 2013. Musically,
                   "Radioactive" is an alternative rock song with elements of electronic rock and contains cryptic lyrics about apocalyptic and revolutionist themes.
                 </p>
-                <a class="button button__visit" href="#">Visit the iTunes -></a>
-                <div class="latter__widget"></div>
-                <div class="latter__track">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/track-cover-desktop-1x.webp">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/track-cover-tab-1x.webp">
-                    <source type="image/webp" srcset="img/track-cover-mob-1x.webp">
+                <div class="latter__wraper">
+                  <a class="button button__visit" href="#">Visit the iTunes ></a>
+                  <div class="latter__widget">
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-audio"></use></svg>
+                    <span class="latter__data">182,364</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-heart"></use></svg>
+                    <span class="latter__data">10 k</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-option"></use></svg>
+                    <span class="latter__data">3 k</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-comment"></use></svg>
+                    <span class="latter__data">96</span>
+                  </div>
+                </div>
+              </div>
+              <div class="latter__track">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/track-cover-desktop-1x.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/track-cover-tab-1x.webp">
+                  <source type="image/webp" srcset="img/track-cover-mob-1x.webp">
 
-                    <source media="(min-width: 1300px)" srcset="img/track-cover-desktop-1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/track-cover-tab-1x.jpg">
-                    <img class="latter__img" src="img/track-cover-mob-1x.jpg" alt="">
-                  </picture>
+                  <source media="(min-width: 1300px)" srcset="img/track-cover-desktop-1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/track-cover-tab-1x.jpg">
+                  <img class="latter__img" src="img/track-cover-mob-1x.jpg" alt="">
+                </picture>
+                <div class="latter__play">
+                  <button class="latter__toggle" type="button" name="button">Play</button>
+                  <button class="latter__toggle" type="button" name="button">Pause</button>
+                  <div class="latter__playbar">----------------------------------------</div>
+                  <div class="latter__playtoggle">+</div>
+                  <span class="latter__playtime latter__playtime--current">0:12 /</span>
+                  <span class="latter__playtime latter__playtime--all">6:40</span>
                 </div>
               </div>
             </li>
             <li class="latter__item">
-              <p class="latter__year">20.07.2015</p>
-              <h3 class="latter__heading latter__heading--item">indian sammer Remix</h3>
               <div class="latter__description">
+                <p class="latter__year">20.07.2015</p>
+                <h3 class="latter__heading latter__heading--item">indian sammer Remix</h3>
                 <h4 class="latter__heading latter__heading--description">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</h4>
                 <p class="latter__text latter__text--description">
                   Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes,
@@ -174,25 +196,44 @@
                   Dutch label Spinnin' Records. After a series of live shows in Europe, which he built over time to contain mostly his own productions,
                   he toured North America for the first time in early 2015. "Midnight Hearts" with the Him featuring ANG13 followed soon...
                 </p>
-                <a class="button button__visit" href="#">Visit the iTunes -></a>
-                <div class="latter__widget"></div>
+                <div class="latter__wraper">
+                  <a class="button button__visit" href="#">Visit the iTunes ></a>
+                  <div class="latter__widget">
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-audio"></use></svg>
+                    <span class="latter__data ">182,364</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-heart"></use></svg>
+                    <span class="latter__data">10 k</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-option"></use></svg>
+                    <span class="latter__data">3 k</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-comment"></use></svg>
+                    <span class="latter__data">96</span>
+                  </div>
+                </div>
               </div>
               <div class="latter__track">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/track2-cover-desktop-1x.webp">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/track2-cover-tab-1x.webp">
-                  <source type="image/webp" srcset="img/track3-cover-mob-1x.webp">
+                  <source type="image/webp" srcset="img/track2-cover-mob-1x.webp">
 
                   <source media="(min-width: 1300px)" srcset="img/track2-cover-desktop-1x.jpg">
                   <source media="(min-width: 768px)" srcset="img/track2-cover-tab-1x.jpg">
                   <img class="latter__img" src="img/track2-cover-mob-1x.jpg" alt="">
                 </picture>
+                <div class="latter__play">
+                  <button class="latter__toggle" type="button" name="button">Play</button>
+                  <button class="latter__toggle" type="button" name="button">Pause</button>
+                  <div class="latter__playbar">----------------------------------------</div>
+                  <div class="latter__playtoggle">+</div>
+                  <span class="latter__playtime latter__playtime--current">0:00 /</span>
+                  <span class="latter__playtime latter__playtime--all">3:20</span>
+                </div>
               </div>
             </li>
             <li class="latter__item">
-              <p class="latter__year">03.04.2015</p>
-              <h3 class="latter__heading latter__heading--item">Chill nation</h3>
               <div class="latter__description">
+                <p class="latter__year">03.04.2015</p>
+                <h3 class="latter__heading latter__heading--item">Chill nation</h3>
                 <h4 class="latter__heading latter__heading--description">James Bay - Let It Go (Bearson Remix)</h4>
                 <p class="latter__text latter__text--description">
                   A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran,
@@ -200,8 +241,19 @@
                   Bay honed his skills regionally, eventually landing high-exposure support slots with Tom Odell,
                   John Newman, and Kodaline before inking a record deal with Republic/Universal in 2012.
                 </p>
-                <a class="button button__visit" href="#">Visit the iTunes -></a>
-                <div class="latter__widget"></div>
+                <div class="latter__wraper">
+                  <a class="button button__visit" href="#">Visit the iTunes ></a>
+                  <div class="latter__widget">
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-audio"></use></svg>
+                    <span class="latter__data ">182,364</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-heart"></use></svg>
+                    <span class="latter__data">10 k</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-option"></use></svg>
+                    <span class="latter__data">3 k</span>
+                    <svg class="latter__icon" width="20" height="20"><use xlink:href="#icon-comment"></use></svg>
+                    <span class="latter__data">96</span>
+                  </div>
+                </div>
               </div>
               <div class="latter__track">
                 <picture>
@@ -213,6 +265,14 @@
                   <source media="(min-width: 768px)" srcset="img/track3-cover-tab-1x.jpg">
                   <img class="latter__img" src="img/track3-cover-mob-1x.jpg" alt="">
                 </picture>
+                <div class="latter__play">
+                  <button class="latter__toggle" type="button" name="button">Play</button>
+                  <button class="latter__toggle" type="button" name="button">Pause</button>
+                  <div class="latter__playbar">----------------------------------------</div>
+                  <div class="latter__playtoggle">+</div>
+                  <span class="latter__playtime latter__playtime--current">0:12 /</span>
+                  <span class="latter__playtime latter__playtime--all">6:40</span>
+                </div>
               </div>
             </li>
           </ul>

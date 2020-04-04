@@ -2,13 +2,14 @@
   position: relative;
   margin: 0 auto;
   z-index: 1;
+  letter-spacing: 3px;
 
   &::before {
     @include pseudo;
     z-index: 1;
-    left: 75px;
+    left: 20px;
     top: 30px;
-    width: 500px;
+    width: 610px;
     height: 2px;
     background-color: #000000;
 
@@ -40,6 +41,12 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &--concert-tours {
+    background: linear-gradient(180deg, rgba(119, 157, 166, 1) 55%, rgba(152, 181, 174, 1) 72%);
     background-clip: text;
     color: transparent;
   }

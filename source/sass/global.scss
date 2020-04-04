@@ -16,6 +16,14 @@ body {
   min-width: $mobile-widths-only;
   font-family: $main-font;
   margin: 0 auto;
+
+  @media (min-width: $tablet-widths) {
+    width: $tablet-widths;
+  }
+
+  @media (min-width: $desktop-widths) {
+    width: $desktop-widths;
+  }
 }
 
 a {
@@ -31,6 +39,16 @@ p {
   color: #7a8083;
   font-size: 15px;
   line-height: 25px;
+
+  @media (min-width: $tablet-widths) {
+    font-size: 21px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 ul {
