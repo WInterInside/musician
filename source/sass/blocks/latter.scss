@@ -1,4 +1,6 @@
 .latter {
+  max-width: $max-mobile-widths;
+
   @media (min-width: $tablet-widths) {
     width: $tablet-widths;
   }
@@ -50,11 +52,77 @@
 }
 
 .latter__wraper,
-.latter__widget,
-.latter__play {
+.latter__widget {
   display: flex;
+}
+
+.latter__wraper {
+  margin-bottom: 20px;
+}
+
+.latter__widget {
+  position: relative;
+  height: 20px;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.latter__widget::before {
+  @include pseudo;
+  top: 54px;
+  left: 30px;
+  opacity: 1;
+  border: 20px solid transparent;
+  border-top: 20px solid #f5f6f6;
+}
+
+.latter__data,
+.latter__icon {
+  opacity: 0.5;
+}
+
+.latter__data:hover,
+.latter__icon:hover {
+  opacity: 1;
 }
 
 .latter__data:not(:last-child) {
   margin-right: 20px;
+}
+
+.latter__play {
+  display: flex;
+  position: relative;
+}
+
+.latter__toggle {
+  margin-right: auto;
+}
+
+.latter__toggle--pause {
+  display: none;
+}
+
+.latter__playtoggle {
+  @include pseudo;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+/*  background-color: #ffffff; */
+  &:active {
+    background-color: blue;
+  }
+}
+
+.latter__playbar {
+  @include pseudo;
+  top: 10px;
+  left: 120px;
+  width: 60%;
+  height: 3px;
+  /*  background-color: #ffffff; */
+  background-color: green;
 }
