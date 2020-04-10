@@ -93,6 +93,8 @@
 .latter__play {
   display: flex;
   position: relative;
+  margin-top: -35px;
+  color: white;
 }
 
 .latter__toggle {
@@ -111,7 +113,8 @@
   height: 20px;
   border-radius: 50%;
   background-color: red;
-/*  background-color: #ffffff; */
+  /* background-color: #ffffff; */
+
   &:active {
     background-color: blue;
   }
@@ -123,6 +126,7 @@
   left: 120px;
   width: 60%;
   height: 3px;
-  /*  background-color: #ffffff; */
+  /* background-color: #ffffff; */
+
   background-color: green;
 }
