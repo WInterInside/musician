@@ -79,11 +79,10 @@
 .latter__data,
 .latter__icon {
   opacity: 0.5;
-}
 
-.latter__data:hover,
-.latter__icon:hover {
-  opacity: 1;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .latter__data:not(:last-child) {
@@ -98,11 +97,17 @@
 }
 
 .latter__toggle {
+  width: 30px;
+  height: 30px;
   margin-right: auto;
 }
 
+.latter__toggle--play {
+  border-radius: 50%;
+}
+
 .latter__toggle--pause {
-  display: none;
+  border-radius: none;
 }
 
 .latter__playtoggle {

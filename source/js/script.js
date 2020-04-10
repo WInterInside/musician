@@ -19,3 +19,17 @@ menu.addEventListener('click', function() {
     menu.classList.add('header__menu--off');
   }
 });
+
+var playtoggle = document.querySelector('.latter__toggle');
+
+playtoggle.classList.add('latter__toggle--pause');
+
+playtoggle.addEventListener('click', function() {
+    if (playtoggle.classList.contains('latter__toggle--pause')) {
+    playtoggle.classList.remove('latter__toggle--pause');
+    playtoggle.classList.add('latter__toggle--play');
+  } else {
+    playtoggle.classList.remove('latter__toggle--play');
+    playtoggle.classList.add('latter__toggle--pause');
+  }
+});
