@@ -20,16 +20,44 @@ menu.addEventListener('click', function() {
   }
 });
 
-var playtoggle = document.querySelector('.latter__toggle');
+var playtoggle1 = document.querySelector('.latter__toggle1');
 
-playtoggle.classList.add('latter__toggle--pause');
+playtoggle1.classList.add('latter__toggle--play');
 
-playtoggle.addEventListener('click', function() {
-    if (playtoggle.classList.contains('latter__toggle--pause')) {
-    playtoggle.classList.remove('latter__toggle--pause');
-    playtoggle.classList.add('latter__toggle--play');
+playtoggle1.addEventListener('click', function() {
+    if (playtoggle1.classList.contains('latter__toggle--play')) {
+    playtoggle1.classList.remove('latter__toggle--play');
+    playtoggle1.classList.add('latter__toggle--pause');
   } else {
-    playtoggle.classList.remove('latter__toggle--play');
-    playtoggle.classList.add('latter__toggle--pause');
+    playtoggle1.classList.remove('latter__toggle--pause');
+    playtoggle1.classList.add('latter__toggle--play');
+  }
+});
+
+var playtoggle2 = document.querySelector('.latter__toggle2');
+
+playtoggle2.classList.add('latter__toggle--play');
+
+playtoggle2.addEventListener('click', function() {
+    if (playtoggle2.classList.contains('latter__toggle--play')) {
+    playtoggle2.classList.remove('latter__toggle--play');
+    playtoggle2.classList.add('latter__toggle--pause');
+  } else {
+    playtoggle2.classList.remove('latter__toggle--pause');
+    playtoggle2.classList.add('latter__toggle--play');
+  }
+});
+
+var playtoggle3 = document.querySelector('.latter__toggle3');
+
+playtoggle3.classList.add('latter__toggle--play');
+
+playtoggle3.addEventListener('click', function() {
+    if (playtoggle3.classList.contains('latter__toggle--play')) {
+    playtoggle3.classList.remove('latter__toggle--play');
+    playtoggle3.classList.add('latter__toggle--pause');
+  } else {
+    playtoggle3.classList.remove('latter__toggle--pause');
+    playtoggle3.classList.add('latter__toggle--play');
   }
 });

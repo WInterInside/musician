@@ -38,17 +38,51 @@
 .latter__text {
   text-align: center;
   margin-bottom: 65px;
+
+  &--description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 72px;
+    margin-bottom: 35px;
+  }
 }
 
 .latter__item {
+  display: flex;
+  flex-direction: column;
   width: 600px;
   margin: 0 auto;
   background-color: #f5f6f6;
   margin-bottom: 50px;
+
+  @media (min-width: $desktop-widths) {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+  }
 }
+
+.latter__item:nth-child(even) {
+  @media (min-width: $desktop-widths) {
+    flex-direction: row-reverse;
+  }
+}
+
+.latter__track {
+  @media (min-width: $desktop-widths) {
+    width: 600px;
+    height: 420px;
+  }
+}
+
 
 .latter__description {
   padding: 30px 30px 0 30px;
+
+  @media (min-width: $desktop-widths) {
+    width: 600px;
+    height: 420px;
+  }
 }
 
 .latter__wraper,
@@ -67,15 +101,6 @@
   margin-bottom: 15px;
 }
 
-.latter__widget::before {
-  @include pseudo;
-  top: 54px;
-  left: 30px;
-  opacity: 1;
-  border: 20px solid transparent;
-  border-top: 20px solid #f5f6f6;
-}
-
 .latter__data,
 .latter__icon {
   opacity: 0.5;
@@ -92,46 +117,65 @@
 .latter__play {
   display: flex;
   position: relative;
-  margin-top: -35px;
+  margin-top: -55px;
   color: white;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.latter__toggle {
-  width: 30px;
-  height: 30px;
+.latter__toggle1,
+.latter__toggle2,
+.latter__toggle3 {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
   margin-right: auto;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
 }
 
 .latter__toggle--play {
-  border-radius: 50%;
+  background-color: transparent;
+  border: 9px solid transparent;
+  border-left: 15px solid #ffffff;
 }
 
 .latter__toggle--pause {
-  border-radius: none;
+  padding: 0;
+  width: 5px;
+  height: 20px;
+  box-shadow: 10px 0 0 0 #ffffff;
 }
 
 .latter__playtoggle {
   @include pseudo;
-  top: 0;
-  left: 50%;
-  width: 20px;
-  height: 20px;
+  top: 7px;
+  left: 30px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: red;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
 
   &:active {
-    background-color: blue;
+    background-color: red;
   }
 }
 
 .latter__playbar {
   @include pseudo;
-  top: 10px;
-  left: 120px;
-  width: 60%;
-  height: 3px;
-  /* background-color: #ffffff; */
+  top: 12px;
+  left: 40px;
+  width: 380px;
+  height: 2px;
+  background-color: #ffffff;
+}
 
-  background-color: green;
+.latter__playtime {
+  padding-top: 3px;
+
+  &--all {
+    padding-left: 5px;
+    opacity: 0.5;
+  }
 }

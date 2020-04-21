@@ -1,0 +1,21 @@
+.slider {
+  //max-width: $max-mobile-widths;
+  height: 645px;
+  background: url("../img/slider-bg-mobile-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-widths) {
+    //width: $tablet-widths;
+    background: url("../img/slider-bg-tab-1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-widths) {
+    //width: $desktop-widths;
+    background: url("../img/slider-bg-descktop-1x.jpg");
+    background-repeat: repeat no-repeat;
+    background-position: right;
+  }
+}
