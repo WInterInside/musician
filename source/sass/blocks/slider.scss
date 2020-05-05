@@ -1,7 +1,7 @@
 .slider {
   //max-width: $max-mobile-widths;
   position: relative;
-  height: 645px;
+  min-height: 645px;
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 160px;
@@ -19,10 +19,26 @@
     background: url("../img/slider-note.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-widths) {
+      top: 225px;
+      width: 200px;
+      height: 54px;
+      left: 690px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (min-width: $desktop-widths) {
+      top: 125px;
+      left: 902px;
+    }
   }
 
   @media (min-width: $tablet-widths) {
     //width: $tablet-widths;
+    min-height: 960px;
+    padding-top: 300px;
     background: url("../img/slider-bg-tab-1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -30,6 +46,10 @@
 
   @media (min-width: $desktop-widths) {
     //width: $desktop-widths;
+    min-height: 645px;
+    padding-top: 200px;
+    padding-left: 650px;
+    padding-right: 650px;
     background: url("../img/slider-bg-descktop-1x.jpg");
     background-repeat: repeat no-repeat;
     background-position: right;
@@ -44,7 +64,40 @@
   }
 
   @media (min-width: $desktop-widths) {
-    display: block;
+    @include pseudo;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    top: 36%;
+
+    &::before {
+      @include pseudo;
+      top: -5px;
+      left: -70px;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      border-bottom: 5px solid #000000;
+      border-left: 5px solid #000000;
+    }
+  }
+}
+
+/*.slider__button--left {
+  left: 0;
+	border: 100px solid transparent;
+  border-left: 100px solid #ffffff;
+}*/
+
+.slider__button--right {
+  right: 0;
+  border: 100px solid transparent;
+  border-right: 100px solid #ffffff;
+
+  &::before {
+    left: 60px;
+    transform: rotate(225deg);
   }
 }
 
@@ -57,6 +110,20 @@
   line-height: 27px;
   color: #ffffff;
 
+  @media (min-width: $tablet-widths) {
+    font-size: 28px;
+    line-height: 40px;
+    padding-left: 270px;
+    padding-right: 270px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
   &--small {
     padding-left: 35px;
     padding-right: 35px;
@@ -64,15 +131,40 @@
     font-size: 15px;
     line-height: 25px;
     color: #7a8083;
+
+    @media (min-width: $tablet-widths) {
+      padding-left: 260px;
+      padding-right: 260px;
+      font-size: 21px;
+      line-height: 36px;
+    }
+
+    @media (min-width: $desktop-widths) {
+      padding-left: 80px;
+      padding-right: 80px;
+      font-size: 14px;
+      line-height: 25px;
+    }
   }
 }
 
 .slider__years {
   padding-left: 230px;
-  text-align: center;
   font-size: 14px;
   line-height: 25px;
   color: #565e61;
+
+  @media (min-width: $tablet-widths) {
+    padding-left: 580px;
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    padding-left: 275px;
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 
 .slider__controls {
@@ -82,6 +174,14 @@
   justify-content: space-between;
   bottom: 110px;
   left: 300px;
+
+  @media (min-width: $tablet-widths) {
+    left: 680px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    left: 930px;
+  }
 }
 
 .slider__toggle {
