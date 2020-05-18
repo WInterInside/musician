@@ -1,0 +1,27 @@
+.upcoming-events {
+  height: 1379px;
+  padding-top: 25px;
+  background: url("../img/uncoming-bg-mob-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 30% 5%;
+
+  @media (min-width: $tablet-widths) {
+
+  }
+
+  @media (min-width: 1537px) and (max-width: 1999px) {
+
+  }
+
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+
+.upcoming-events__list {
+  padding-left: 150px;
+}
+
+.upcoming-events__addres {
+  font-style: normal;
+}
