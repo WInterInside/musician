@@ -1,27 +1,89 @@
 .upcoming-events {
-  height: 1379px;
+  min-height: 1379px;
   padding-top: 25px;
   background: url("../img/uncoming-bg-mob-1x.jpg");
   background-repeat: no-repeat;
   background-position: 30% 5%;
 
   @media (min-width: $tablet-widths) {
-
-  }
-
-  @media (min-width: 1537px) and (max-width: 1999px) {
-
+    background: url("../img/uncoming-bg-tab-1x.jpg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-widths) {
+    background: url("../img/uncoming-bg-descktop-1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
 
+.upcoming-events__heading {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+
+  &:before {
+    @include pseudo;
+    top: 28px;
+    height: 1px;
+    width: 120px;
+    background-color: #000000;
   }
 }
 
 .upcoming-events__list {
   padding-left: 150px;
+  height: 739px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-widths) {
+    padding-left: 250px;
+  }
+}
+
+.upcoming-events__date {
+  position: relative;
+  color: rgba(0, 0, 2, 0.6);
+  font-weight: bold;
+  padding-bottom: 155px;
+
+  &:before {
+    @include pseudo;
+    top: 30px;
+    left: 40px;
+    height: 150px;
+    width: 1px;
+    background-color: #000000;
+  }
 }
 
 .upcoming-events__addres {
+  position: relative;
   font-style: normal;
+  color: #7a8083;
+  padding-bottom: 70px;
+
+  &:before {
+    @include pseudo;
+    top: 73px;
+    left: 40px;
+    height: 50px;
+    width: 1px;
+    background-color: #000000;
+  }
+}
+
+.upcoming-events__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 70px;
+
+  &:before {
+    @include pseudo;
+    top: 192px;
+    left: 40px;
+    height: 50px;
+    width: 1px;
+    background-color: #000000;
+  }
 }

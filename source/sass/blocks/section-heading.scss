@@ -31,8 +31,9 @@
     letter-spacing: 6px;
 
     &::before {
-      left: 90px;
+      left: 75px;
       width: 500px;
+      height: 1px;
     }
   }
 }
