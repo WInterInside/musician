@@ -21,7 +21,7 @@
   margin-bottom: 0;
   padding-bottom: 25px;
 
-  &:before {
+  &::before {
     @include pseudo;
     top: 28px;
     height: 1px;
@@ -36,7 +36,7 @@
   overflow: hidden;
 
   @media (min-width: $tablet-widths) {
-    padding-left: 250px;
+    padding-left: 350px;
   }
 }
 
@@ -46,7 +46,7 @@
   font-weight: bold;
   padding-bottom: 155px;
 
-  &:before {
+  &::before {
     @include pseudo;
     top: 30px;
     left: 40px;
@@ -62,7 +62,7 @@
   color: #7a8083;
   padding-bottom: 70px;
 
-  &:before {
+  &::before {
     @include pseudo;
     top: 73px;
     left: 40px;
@@ -78,7 +78,7 @@
   position: relative;
   padding-bottom: 70px;
 
-  &:before {
+  &::before {
     @include pseudo;
     top: 192px;
     left: 40px;
