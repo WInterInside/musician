@@ -34,6 +34,18 @@
       left: 75px;
       width: 500px;
       height: 1px;
+
+      @media (min-width: $tablet-widths) {
+        left: 75px;
+        width: 930px;
+        height: 1px;
+      }
+
+      @media (min-width: $desktop-widths) {
+        left: 75px;
+        width: 500px;
+        height: 1px;
+      }
     }
   }
 }
