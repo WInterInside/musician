@@ -103,16 +103,16 @@
     background-color: #000000;
   }
 
-    @media (min-width: $tablet-widths) {
-      font-size: 24px;
-      line-height: 25px;
+  @media (min-width: $tablet-widths) {
+    font-size: 24px;
+    line-height: 25px;
 
-      &::before {
-        top: 95px;
-        height: 50px;
-        width: 1px;
-      }
+    &::before {
+      top: 95px;
+      height: 50px;
+      width: 1px;
     }
+  }
 
   @media (min-width: $desktop-widths) {
     font-size: 34px;
