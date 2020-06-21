@@ -47,12 +47,17 @@
 
 .upcoming-events__list {
   padding-left: 150px;
-  height: 739px;
+  padding-right: 50px;
+  height: 750px;
   overflow: hidden;
 
   @media (min-width: $tablet-widths) {
     height: 840px;
     padding-left: 280px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    height: 740px;
   }
 }
 
@@ -115,12 +120,12 @@
   }
 
   @media (min-width: $desktop-widths) {
-    font-size: 34px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 25px;
 
     &::before {
-      top: 40px;
-      height: 150px;
+      top: 90px;
+      height: 50px;
       width: 1px;
     }
   }
@@ -131,6 +136,15 @@
   margin-bottom: 0;
   position: relative;
   padding-bottom: 70px;
+
+  &::before {
+    @include pseudo;
+    top: 215px;
+    left: 40px;
+    height: 50px;
+    width: 1px;
+    background-color: #000000;
+  }
 
   @media (min-width: $tablet-widths) {
     font-size: 24px;
@@ -146,20 +160,6 @@
     }
   }
 
-  @media (min-width: $desktop-widths) {
-    font-size: 34px;
-    line-height: 35px;
-  }
-
-  &::before {
-    @include pseudo;
-    top: 192px;
-    left: 40px;
-    height: 50px;
-    width: 1px;
-    background-color: #000000;
-  }
-
   @media (min-width: $tablet-widths) {
     font-size: 24px;
     line-height: 25px;
@@ -173,7 +173,13 @@
   }
 
   @media (min-width: $desktop-widths) {
-    font-size: 34px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 25px;
+
+    &::before {
+      top: 120px;
+      height: 50px;
+      width: 1px;
+    }
   }
 }
