@@ -1,0 +1,17 @@
+.history {
+  min-height: 1000px;
+  padding-top: 25px;
+  background: url("../img/history-bg-mob-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 90%;
+
+  @media (min-width: $tablet-widths) {
+    background: url("../img/history-bg-tab-1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-widths) {
+    background: url("../img/history-bg-descktop-1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
