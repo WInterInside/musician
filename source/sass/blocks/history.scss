@@ -1,6 +1,5 @@
 .history {
-  min-height: 1000px;
-  padding-top: 25px;
+  min-height: 1115px;
   background: url("../img/history-bg-mob-1x.jpg");
   background-repeat: no-repeat;
   background-position: center 90%;
@@ -14,4 +13,9 @@
     background: url("../img/history-bg-descktop-1x.jpg");
     background-repeat: no-repeat;
   }
+}
+
+.history__text {
+  text-align: center;
+  margin-bottom: 200px;
 }

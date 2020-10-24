@@ -26,6 +26,29 @@
     }
   }
 
+  &--history {
+    color: #526e79;
+    letter-spacing: 6px;
+
+    &::before {
+      left: 175px;
+      width: 280px;
+      height: 1px;
+
+      @media (min-width: $tablet-widths) {
+        left: 75px;
+        width: 400px;
+        height: 1px;
+      }
+
+      @media (min-width: $desktop-widths) {
+        left: 455px;
+        width: 273px;
+        height: 1px;
+      }
+    }
+  }
+
   &--upcoming-events {
     color: #526e79;
     letter-spacing: 6px;
